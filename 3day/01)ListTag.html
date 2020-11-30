@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Tag</title>
+    <style>
+        /* 하위요소는 띄어쓰기로 구분, 직하위 요소는 '>'로 */
+    </style>
+</head>
+<body>
+    * li를 단독으로 사용할 경우 웹 표준에 어긋남 (ul 또는 ol 안에 입력)<br>
+    * ul 또는 ol의 직하위에 li를 제외한 다른 Tag가 들어갈 수 없음 (웹 표준에 어긋남)
+    <ul> <!-- Unordered List : 순서가 없는 목록 Tag-->
+        <li>강아지</li> <!-- List Item : 목록을 이루는 요소 -->
+        <li>고양이</li>
+        <li>거북이</li>
+    </ul>
+    <ol> <!-- Ordered List : 순서가 있는 목록 Tag -->
+        <li>강아지</li> 
+        <li>고양이</li> 
+        <li>거북이</li>
+    </ol>
+    
+    <!-- 웹 표준에서 어긋나는 List 예 -->
+    <br>
+    <li>Test1</li>
+    <li>Test2</li>
+    <li>Test3</li>
+    <br>
+    <div>
+        <li>Test1</li>
+        <li>Test2</li>
+        <li>Test3</li>
+    </div>
+
+    <!-- 웹 표준에서 어긋나는 List 예 -->
+
+    <ul>
+        <li>
+            분식
+            <ul type="square">
+                <li>떡볶이</li>
+                <li>튀김</li>
+                <li>순대</li>
+            </ul>
+        </li>
+        <li>
+            짱께집
+            <ol type="A">
+                <li>짬뽕</li>
+                <li>짜장면</li>
+                <li>탕수육</li>
+            </ol>
+        </li>
+    </ul>
+</body>
+</html>
