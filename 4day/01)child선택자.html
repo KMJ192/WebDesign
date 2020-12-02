@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자손손택자와 자식선택자</title>
+    <style>
+        div#header>h1{color: red;}
+        div>div>h1{color : blue;}
+        #section h2 { background-color : skyblue;}
+        /* section이라는 id를 가지고 있는 요소의 자손 중 h2인것 편집 */
+        #article .text{font-size : 12px;}
+    </style>
+</head>
+<body>
+    <div id="header">
+       <h1>Web Publisher</h1> 
+       <div>
+           <h1>4 day</h1>
+       </div>
+    </div>
+
+    <div id="section">
+        <h2>자손선택자, 자식 선택자</h2>
+        <div id="article">
+            <h2 class="text">
+                자손선택자, 자식선택자 차이
+            </h2>
+        </div>
+    </div>
+</body>
+</html>

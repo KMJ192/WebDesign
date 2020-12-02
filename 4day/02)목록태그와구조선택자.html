@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 일반 구조 선택자(~child) : 자식 요소의 '순번'위주
+        선택하고자 하는 Tag의 이름을 잘 보고 작성할 것. 
+        중간에 다른 형태를 가진 태그가 끼어있어도 순번에 포함을 시켜서 counting*/
+        ul>li:first-child{color : red;}
+        /* ul의 자식을 기준으로 첫번쨰 자식인데 li 인것 */
+        ul>h2:last-child{color : green;}
+        /* ul의 자식을 기준으로 마지막 자식인데 h2인 것 */
+        ul>li:nth-child(9){color:hotpink;}
+        /* ul의 9번째 자식인데 li 인것 */
+        ul>li:nth-last-child(2) {font-size:30px;}
+        /* ul의 자식 중 2번째 자식인데 li 인것 */
+        ul>li:nth-child(2n) {background-color : yellow;}
+        /* ul의 자식 중 짝수번째 자식인데 li 인것  */
+        ul>li:nth-child(2n+1) {background-color : skyblue;}
+        /* ul의 자식 중 홀수번째 자식인데 li 인것 */
+
+        /* 형태 구조 선택자(~of-type) : 자식의 "형태" 위주, 형태를 구분하여 그 안에서 순서를 센다*/
+        ol>li:first-of-type {color : red;}
+        /* ol의 자식 중 li 중 첫번째 자식 */
+        ol>li:last-of-type {color : orange;}
+        /* ol의 자식 중 li 중 마지막 자식 */
+        ol>h2:last-of-type{font-size : 14px;}
+        /* ol의 자식 중 h2 중 마지막 번째 자식 */
+        ol>li:nth-of-type(4) {color : turquoise;} /* == ol>li:nth-child(6) */
+        ol>li:nth-last-of-type(2) {color : tomato;} /* == ol>li:nth-last-child(3) */
+        ol>li:nth-of-type(2n) {background-color : yellow;}
+        /* 짝수번째 자식 선택하여 편집 */
+    </style>
+</head>
+<body>
+    <ul>
+        <li>짜장</li>
+        <li>짬뽕</li>
+        <li>탕수육</li>
+        <li>마파두부</li>
+        <li>북경반점</li>
+        <li>삼선짬뽕</li>
+        <li>유산슬</li>
+        <li>깐풍기</li>
+        <li>쟁반짜장</li>
+        <h2>홍콩반점</h2>
+    </ul>
+    <hr>
+    <ol>
+        <h1>중식류</h1>
+        <li>짜장</li>
+        <li>짬뽕</li>
+        <li>탕수육</li>
+        <h1>식사류</h1>
+        <li>마파두부</li>
+        <li>짬뽕밥</li>
+        <li>잡채밥</li>
+        <h1>요리류</h1>
+        <li>유산슬</li>
+        <li>깐풍기</li>
+    </ol>
+</body>
+</html>
