@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* 자식요소의 위치 지정시 position:absolute;를 사용하여 지정할 경우 부모요소를 기준으로 위치를 잡으려면 position:relative/absolute/fixed;를 부모요소에게 지정해주면 됩니다.
+
+만약 부모요소의 위치가 변경될 일이 없다면 position:relative;만 넣어주면 되고,
+부모요소가 움직여야하는 경우라면 relative와 함께 상대위치값을 지정해주거나,
+absolute와 함께 절대위치값을 지정해주거나,
+fixed와 함께 고정위치를 지정하면 됩니다. */
+* {margin: 0; padding: 0;}
+
+#wrap {width: 800px; height: 600px; background-color: lightgray; position: relative; margin: auto;}
+
+#one {width: 200px; height: 200px; background-color: white; border-radius: 20px; position: absolute; left: 200px; top: 0;}
+#one_01 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; left: 80px; top: 80px;}
+
+#two {width: 200px; height: 200px; background-color: white; border-radius: 20px; position: absolute; left: 0; top: 200px;}
+#two_01 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; left: 20px; top: 20px;}
+#two_02 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; right: 20px; bottom: 20px;}
+
+#three {width: 200px; height: 200px; background-color: white; border-radius: 20px; position: absolute; left: 200px; top: 200px;}
+#three_01 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; left: 20px; top: 20px;}
+#three_02 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; left: 80px; top: 80px;}
+#three_03 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; right: 20px; bottom: 20px;}
+
+#four {width: 200px; height: 200px; background-color: white; border-radius: 20px; position: absolute; right: 0; top: 200px;}
+#four_01 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; left: 20px; top: 20px;}
+#four_02 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; right: 20px; top: 20px;}
+#four_03 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; left: 20px; bottom: 20px;}
+#four_04 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; right: 20px; bottom: 20px;}
+
+#five {width: 200px; height: 200px; background-color: white; border-radius: 20px; position: absolute; top: 200px; right: 200px;}
+#five_01 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; left: 20px; top: 20px;}
+#five_02 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; right: 20px; top: 20px;}
+#five_03 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; left: 80px; top: 80px;}
+#five_04 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; left: 20px; bottom: 20px;}
+#five_05 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; right: 20px; bottom: 20px;}
+
+#six {width: 200px; height: 200px; background-color: white; border-radius: 20px; position: absolute; left: 200px; bottom: 0;}
+#six_01 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; left: 20px; top: 20px;}
+#six_02 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; left: 20px; top: 80px;}
+#six_03 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; left: 20px; bottom: 20px;}
+#six_04 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; right: 20px; top: 20px;}
+#six_05 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; right: 20px; top: 80px;}
+#six_06 {width: 40px; height: 40px; background-color: black; border-radius: 50%; position: absolute; right: 20px; bottom: 20px;}
