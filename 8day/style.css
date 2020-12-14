@@ -1,0 +1,28 @@
+div {
+    width : 200px;
+    height : 100px;
+}
+#hex6 {
+    background-color : #ff0000;
+}
+#hex3{
+    background-color: #f00;
+}
+#rgb {
+    background-color: rgb(255, 0, 0);
+}
+#rgba{
+    background-color: rgba(255, 0, 0, 1); /*마지막 컬럼 알파값(0 ~ 1), 투명도 조정*/
+}
+#hsl{
+    background-color: hsl(0, 100%, 50%); /*색상, 채도, 밝기*/
+}
+#hsla{
+    background-color: hsl(0, 100%, 50%, 1); /*마지막 컬럼 알파값(0 ~ 1), 투명도 조정*/
+}
+#rgba_05{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+#opacity_05 {
+    background-color: red; opacity: 0.5;;
+}

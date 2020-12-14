@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TableTag</title>
+    <style>
+        table, tr, th, td{
+            border : 1px solid red;
+        }
+        table {
+            width : 500px;
+            border-collapse: collapse; /* 중복되는 표와 셀의 테두리를 한줄로 표시*/
+        }
+        thead{
+            background-color : aqua; 
+            border-bottom:3px solid blue;
+        }
+        th, td {
+            padding : 10px;
+        }
+        tbody > tr:nth-child(2){
+            background-color: yellow;
+        }
+        colgroup > col:nth-child(1) {
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <table> <!-- table tag-->
+        <caption>표의 제목</caption>
+        <colgroup> <!-- Column으로 묶기 가능, col tag 개수는 열의 개수랑 동일하게 입력-->
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead> <!-- table의 제목행 Group-->
+            <tr> <!-- table row : 표 내부의 행-->
+                <th>제목1</th> <!-- table header : 행 내부의 제목 셀(제목 한 칸), 글자 border, center-->
+                <th>제목2</th>
+                <th>제목3</th>
+                <th>제목4</th>
+            </tr>
+        </thead>
+        <tbody> <!-- table의 본문 행 Group-->
+            <tr>
+                <td>내용1-1</td> <!-- table 내용 : 테이블의 내용 셀(내용 한 칸)-->
+                <td colspan="2">내용1-2</td>
+                <td rowspan="4">내용1-4</td>
+            </tr>
+            <tr>
+                <td>내용2-1</td>
+                <td>내용2-2</td>
+                <td>내용2-3</td>
+            </tr>
+            <tr>
+                <td>내용3-1</td>
+                <td>내용3-2</td>
+                <td>내용3-3</td>
+            </tr>
+            <tr>
+                <td>내용4-1</td>
+                <td>내용4-2</td>
+                <td>내용4-3</td>
+            </tr>
+        </tbody>
+        <tfoot> <!-- table의 요약행 Group -->
+            <tr>
+                <td>내용5-1</td>
+                <td>내용5-2</td>
+                <td>내용5-3</td>
+                <td>내용5-4</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
