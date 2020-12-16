@@ -1,0 +1,37 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+div {
+    width : 100px;
+    height : 100px;
+}
+#box01 {
+    background-color: rgba(255, 0, 0, .5);
+    float : left;
+}
+#box02 {
+    background-color: rgba(0, 255, 0, .5);
+    float : left;
+}
+#box03 {
+    background-color: rgba(0, 0, 255, .5);
+    float : left;
+}
+#right_container {
+    width : 300px;
+    height: 100px;
+}
+#box04 {
+    background-color: rgba(255, 255, 0, .5);
+    /* clear : both; */
+    float : left;
+}
+#box05 {
+    background-color: rgba(255, 0, 255, .5);
+    float : left;
+}
+#box06 {
+    background-color: rgba(0, 255, 255, .5);
+    float : left;
+}
