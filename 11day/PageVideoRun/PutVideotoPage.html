@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bg_video{
+            position : fixed;
+            left:0;
+            top:0;
+            width:auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+            z-index:-1;
+            /* background: url(../poster_image.jpg) left top no-repeat; */
+            /* background-size: cover; */
+        }
+        
+        #container{
+            width : 450px;
+            height : 300px;
+            border :1px solid #fff; 
+            padding : 30px;
+            box-sizing : border-box;
+            text-align : center;
+            color : #fff;
+            background : rgba(255, 255, 255, .1);
+            position : absolute;
+            left : 50%;
+            top : 50%;
+            margin: -150px 0 0 -225px;
+        }
+
+        #container h2 {
+            margin-bottom: 50px;
+        }
+
+        #container a {
+            background : rgba(255, 255, 255, .1);
+            padding : 10px 20px;
+            text-decoration : none;
+            color : #000;
+            border-radius : 20px;
+        }
+    </style>
+</head>
+<body>
+    <video src="../video_sample.mp4" id="bg_video" autoplay muted loop></video>
+    <div id="container">
+        <h1>
+            Hello
+        </h1>
+        <h2>Welcome to hello world</h2>
+        <a href="#">click</a>
+    </div>
+</body>
+</html>
