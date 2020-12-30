@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form tag</title>
+    <style>
+        textarea{
+            width:500px;
+            height:300px;
+            resize:none; /*사용자가 textarea 크기 수정 불가능하게 함*/
+        }
+    </style>
+</head>
+<body>
+    <form action="http://naver.com" method="GET">
+        <!-- form 태그 속성
+        action : 태그 내 내용을 서버로 보낼 때 해당 데이터가 도착할 URL 주소
+        method : form 내용을 서버로 보내는 방식을 선택
+            - get방식 : 주소addr에 담아전송 취약, 길이제한있음
+            - post방식 : 길이제한 없음
+    -->
+        <fieldset> <!--폼 요소들을 묶어주는 역할을 하는 태그-->
+            <legend> <!-- fieldset의 제목-->
+                로그인 정보
+            </legend>
+            <ul>
+                <li>
+                    <lable for="user_id">ID</lable>
+                    <input type="text" id="user_id" size="20" minlength="3" maxlength="10" placeholder="ID는 3자이상 10자 이하" required autofocus>
+                    <!-- 
+                        label과 input 이어주기 : label 태그의 for 속성과 input태그의 속성값 일치시킴
+                    -->
+                </li>
+                <li>
+                    <label for="user_pw">PW</label>
+                    <input type="password" required>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                개인 정보
+            </legend>
+            <ul>
+                <li>
+                    <label for="user_name">Name</label>
+                    <input type="text" id="user_name" required>
+                </li>
+                <li>
+                    <label for="user_phone">연락처</label>
+                    <input type="tel" id="user_phone" required>
+                </li>
+                <li>
+                    <label for="user_email">Email</label>
+                    <input type="email" id="user_email" required>
+                </li>
+                <li>
+                    <label for="user_web">Web Site</label>
+                    <input type="url" id="user_web">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>등록 정보</legend>
+            <ul>
+                <li>
+                    <label>
+                        참여인원
+                        <span>
+                            (최대 10명)
+                        </span>
+                    </label>
+                    <input type="number" value="1" min="0" max="10" step="1">
+                <!-- 
+                    value 기본값
+                    min 최소값
+                    max 최대값
+                    step 늘어나는 간격
+                -->
+                </li>
+                <li>
+                    <label>
+                        지원 물품
+                        <span>
+                            (인당 5개)
+                        </span>
+                    </label>
+                    <input type="number" value="5" min="0" max="50" step="5">
+                </li>
+                <li>
+                    <label>
+                        희망 단계
+                        <span>
+                            (하, 중, 상)
+                        </span>
+                    </label>
+                    <input type="range" value="1" min="1" max=3>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>라디오 버튼, 체크박스</legend>
+            <ul>
+                <li>
+                    <p>라디오 버튼</p>
+                    <label>
+                        <input type="radio" name="gender" value="male">남
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">여
+                    </label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label>
+                        남자
+                    </label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label>
+                        여자
+                    </label>
+                </li>
+                <li>
+                    <p>체크박스 (관심사)</p>
+                    <input type="checkbox" id="game" value="game">
+                    <label for="game">게임</label>
+                    <input type="checkbox" id="zoosik" value="zoosik">
+                    <label for="zoosik">주식</label>
+                    <input type="checkbox" id="football" value="football">
+                    <label for="football">축구</label>
+                    <input type="checkbox" id="music" value="music">
+                    <label for="music">pop</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>컬러, 날짜, 시간</legend>
+            <ul>
+                <li>
+                    <label>컬러 선택</label>
+                    <input type="color" value="#ff0000">
+                </li>
+                <li>
+                    <label>날짜 선택</label>
+                    <input type="date">
+                </li>
+                <li>
+                    <label>날짜 및 시간</label>
+                    <input type="datetime-local" value="2020-12-30T19:10">
+                </li>
+                <li>
+                    <label>시간</label>
+                    <input type="time" value="10:00" step="5">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>버튼들</legend>
+            <input type="submit" value="확인">
+            <input type="reset" value="초기화">
+            <input type="image" src="D:\develop\WebDesign\12day\bu.jpg" style="width:100px" alt="확인버튼">
+            <input type="button" value="확인">
+            <button type="submit">확인</button>
+        </fieldset>
+        <fieldset>
+            <legend>그 외 form tag</legend>
+            <p>파일 첨부</p>
+            <input type="file">
+            <p>현재 진행 상태</p>
+            <progress max="100" value="6"></progress>
+            <p>범위 내 값 표시</p>
+            <meter min="0" max="100" low="30" high="70" value="60"></meter>
+        </fieldset>
+        <fieldset>
+            <legend>Text 여러줄 작성</legend>
+            <textarea></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>select box</legend>
+            <select>
+                <option value="berry">딸기</option>
+                <option value="apple">사과</option>
+                <option value="orange">오렌지</option>
+            </select>
+        </fieldset>
+    </form>
+</body>
+</html>
