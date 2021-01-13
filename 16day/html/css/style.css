@@ -92,94 +92,112 @@ nav{
 section{
     width: 100%;
     height: 876px;
-    background-color: url(..\img\bgimg.png);
+    background: url(../img/bgimg.png);
 }
 
 #section_container{
     width: 1000px;
     height: 876px;
-    background-color:rgba(0, 0, 0,.1);
     margin:auto;
     padding-top: 40px;
     box-sizing: border-box;
+    position: relative;
 }
 .main_banner_01{
     width: 594px;
     height: 594px;
-    background-color: rgba(0, 0, 0,.1);
     float: left;
     margin : 0 15px 15px 0;
 }
 .main_banner_02{
     width: 391px;
     height: 188px;
-    background-color: rgba(0, 0, 0,.2);
     float: left;
     margin-bottom : 15px;
 }
 .main_banner_03{
     width: 391px;
     height: 188px;
-    background-color: rgba(0, 0, 0,.3);
     float: left;
     margin-bottom : 15px;
 }
 .main_banner_04{
     width: 391px;
     height: 188px;
-    background-color: rgba(0, 0, 0,.4);
     float: left;
     margin-bottom : 15px;
 }
 .main_banner_05{
     width: 391px;
     height: 188px;
-    background-color: rgba(0, 0, 0,.5);
     float: left;
     margin-right : 15px;
 }
 .main_banner_06{
     width: 188px;
     height: 188px;
-    background-color: rgba(0, 0, 0,.6);
     float: left;
     margin-right : 15px;
 }
 .main_banner_07{
     width: 188px;
     height: 188px;
-    background-color: rgba(0, 0, 0,.7);
     float: left;
     margin-right : 15px;
 }
 .main_banner_08{
     width: 188px;
     height: 188px;
-    background-color: rgba(0, 0, 0,.8);
     float: left;
+}
+.quick{
+    width:116px;
+    height: 584px;
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    margin-left: 522px;
 }
 
 footer{
     width: 100%;
     height: 150px;
-    background-color: rgba(255, 255, 0, .1);
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 #footer_container{
     width: 1000px;
     height: 150px;
-    background-color:rgba(0, 0, 0,.1);
     margin:auto;
 }
 .f_logo{
     width: 200px;
     height: 150px;
-    background: url(..\img\footer_logo.jpg) no-repeat right 30px;
     float: left;
+    background: url(../img/footer_logo.jpg) no-repeat right 30px;
+    margin-right: 50px;
 }
 .company{
     width: 750px;
     height: 150px;
-    background: rgba(0,0,0,.2);
     float: left;
+    padding-top: 30px;
+    box-sizing: border-box;
+    color: #cccccc;
+    font-size: 11px;
+}
+.company a{
+    color: #555555;
+    margin: 0 5px;
+}
+.company a:first-child{
+    margin-left: 0;
+}
+.company a:nth-child(3), .company a:nth-child(4){
+    font-weight: bold;
+}
+.company p:first-of-type{
+    margin: 12px 0 15px;
+    color: #777;
+    line-height: 1.7;
 }
