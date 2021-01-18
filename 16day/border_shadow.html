@@ -4,6 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+            width : 200px;
+            height : 100px;
+            background-color: #ccc;
+            margin-bottom: 10px;
+        }
+        #box01 {
+            border: 5px dashed red;
+        }
+        #box02 {
+            border: 10px dotted red;
+        }
+        #box03 {
+            border: 10px groove red;
+        }
+        #box04 {
+            border: 10px ridge red;
+        }
+        #box05 {
+            border: 10px hidden red;
+        }
+        #box06 {
+            border: 10px none red;
+        }
+        #box07 {
+            border: 10px inset red;
+        }
+        #box08 {
+            border: 10px outset red;
+        }
+        #box09 {
+            border: 10px double red;
+        }
+        #box10 {
+            border: 10px solid red;
+        }
+        #box11 {
+            border-top: 1px solid yellow;
+            border-right: 2px dotted green;
+            border-bottom: 4px double blue;
+            border-left: 8px dashed magenta;
+        }
+        #box12 {
+            box-shadow: 5px 10px 10px 5px #000000;
+            /* 
+                x이동(양수 우측이동, 음수 좌측이동) 
+                y이동(양수 하단이동, 음수 상단이동)
+                흐림정도
+                번짐도
+                색상
+                inset : 안쪽그림자
+            */
+        }
+        #box13 {
+            margin-top: 20px;
+            box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, .4);
+        }
+        h1{
+            text-shadow: 10px 10px 10px #000000;
+        }
+    </style>
 </head>
 <body>
     <div id="box01">dashed</div>
