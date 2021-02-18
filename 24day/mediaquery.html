@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="description" content="페이지 설명"> -->
+    <title>미디어쿼리</title>
+    <style>
+        body{
+            color : #fff;
+            font-size: 30px;
+        }
+        @media screen and (max-width: 767px) {
+            body{background-color: red;}
+        }
+        @media screen and (min-width: 768px) and (max-width: 959px) {
+            body{background-color: green;}
+        }
+        @media screen and (min-width: 960px) {
+            body{background-color: blue;}
+        }
+    </style>
+</head>
+<body>
+    미디어 쿼리 중단점(break point)을 세개 만듬.<br>
+    모바일 버전 : 0 ~ 767px(빨간색배경)<br>
+    태블릿 버전 : 768 ~ 959px(초록색 배경)<br>
+    데스크탑 버전 : 960px ~ (파란색 배경)
+</body>
+</html>
